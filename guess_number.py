@@ -7,6 +7,13 @@ def guess_num(g, n):    #function checks if guess g is equal to number n
     else:
         print("Sorry. That is incorrect.")
         
+        hint(g, n)
+
+def hint(g, n):
+    if g > n:
+        print("Your guess is higher than the number I'm thinking of.")
+    if g < n:
+        print("Your guess is lower than the number I'm thinking of.")
 
 print("I'm thinking of a number...")
 guess = int(input("What number am I thinking of? "))
